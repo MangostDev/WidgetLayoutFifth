@@ -1,4 +1,4 @@
-BoxLayoutExample
+StackLayoutExample
 
 <BoxLayoutExample>:
     orientation: "horizontal"
@@ -15,6 +15,40 @@ BoxLayoutExample
         # horizontal positions: "x"(left), "center_x", "right"
         # vertical positions: "y"(top), "center_y", "bottom"
         pos_hint: {"y":.5}
+        pos_hint: {"x":.5}
+
+    BoxLayout:
+        spacing: '20dp'
+        Button:
+            text: "Second not silly button"
+            # horizontal positions: "x"(left), "center_x", "right"
+            # vertical positions: "y"(top), "center_y", "bottom"
+            pos_hint: {"y":.5}
+            pos_hint: {"x":1}
+        Button:
+            text: "Second silly button"
+            # horizontal positions: "x"(left), "center_x", "right"
+            # vertical positions: "y"(top), "center_y", "bottom"
+            pos_hint: {"y":2}
+            pos_hint: {"x":2}
+
+
+<StackLayoutExample>
+    Button:
+        text: "silly little button"
+        size_hint: .2,.2
+    Button:
+        text: "silly little button"
+        size_hint: .2,.2
+    Button:
+        text: "silly little button"
+        size_hint: .2,.2
+    Button:
+        text: "silly little button"
+        size_hint: .2,.2
+    Button:
+        text: "silly little button"
+        size_hint: .2,.2
 
 
 

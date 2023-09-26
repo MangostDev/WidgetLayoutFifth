@@ -1,4 +1,21 @@
-StackLayoutExample
+LayoutAssignment
+
+<LayoutAssignment>:
+    orientation: "vertical"
+    Label:
+        text: "idk"
+    BoxLayout:
+        Button:
+            text: "insert another layout"
+        Button:
+            text: "insert another layout"
+        Button:
+            text: "insert another layout"
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
 
 <BoxLayoutExample>:
     orientation: "horizontal"
@@ -49,6 +66,31 @@ StackLayoutExample
     Button:
         text: "silly little button"
         size_hint: .2,.2
+
+<GridLayoutExample>:
+    # define the number of rows and columns
+    rows: 3
+
+    Button:
+        text: "A"
+
+    Button:
+        text: "A"
+
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
 
 
 

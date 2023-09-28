@@ -2,15 +2,60 @@ LayoutAssignment
 
 <LayoutAssignment>:
     orientation: "vertical"
+    spacing: '25dp'
     Label:
         text: "idk"
+        size_hint: 1,.25
+        background_color: 255,1,1,1
     BoxLayout:
-        Button:
-            text: "insert another layout"
-        Button:
-            text: "insert another layout"
-        Button:
-            text: "insert another layout"
+        spacing: '25dp'
+        BoxLayout:
+            spacing: '25dp'
+            Button:
+                text: "click me"
+                background_color: 255,1,1,1
+            Button:
+                text: "do NOT click me"
+                background_color: 200,1,1,1
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: '25dp'
+            Button:
+                text: "top"
+                background_color: 1,255,1,1
+            Button:
+                text: "middle"
+                background_color: 1,255,1,1
+            Button:
+                text: "bottom"
+                background_color: 1,255,1,1
+        GridLayout:
+            spacing: '25dp'
+            rows: 4
+            Button:
+                text: "1"
+                background_color: 1,1,255,1
+            Button:
+                text: "2"
+                background_color: 1,1,255,1
+            Button:
+                text: "3"
+                background_color: 1,1,255,1
+            Button:
+                text: "4"
+                background_color: 1,1,255,1
+            Button:
+                text: "5"
+                background_color: 1,1,255,1
+            Button:
+                text: "6"
+                background_color: 1,1,255,1
+            Button:
+                text: "7"
+                background_color: 1,1,255,1
+            Button:
+                text: "8"
+                background_color: 1,1,255,1
 
 <ScrollViewExample@ScrollView>:
     StackLayoutExample:
